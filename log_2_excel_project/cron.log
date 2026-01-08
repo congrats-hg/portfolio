@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 12, in <module>
+    from sheets_handler import SheetsHandler
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 1, in <module>
+    import gspread
+ModuleNotFoundError: No module named 'gspread'
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 12, in <module>
+    from sheets_handler import SheetsHandler
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 1, in <module>
+    import gspread
+ModuleNotFoundError: No module named 'gspread'
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 12, in <module>
+    from sheets_handler import SheetsHandler
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 1, in <module>
+    import gspread
+ModuleNotFoundError: No module named 'gspread'
