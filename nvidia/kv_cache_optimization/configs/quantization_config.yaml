@@ -1,0 +1,77 @@
+# KV Cache Quantization Configuration
+# =====================================
+# Reference: NVIDIA TensorRT-LLM NVFP4 KV Cache
+
+# Default quantization settings
+quantization:
+  # Bit width: 8 for INT8, 4 for INT4 (NVFP4-style)
+  bits: 8
+
+  # Symmetric quantization (centered at 0)
+  symmetric: true
+
+  # Per-channel (more accurate) vs per-tensor (faster)
+  per_channel: true
+
+  # Group size for grouped quantization
+  # Smaller = more accurate, larger = more efficient
+  group_size: 128
+
+# Eviction policy settings
+eviction:
+  # Maximum tokens to keep in cache
+  max_cache_size: 4096
+
+  # Policy: lru, attention, priority, sliding_window, heavy_hitter
+  policy: attention
+
+  # Attention score decay factor (for attention-based policy)
+  attention_decay: 0.99
+
+  # Never evict first N tokens (system prompt protection)
+  min_protected_tokens: 64
+
+  # Evict this many tokens at once for efficiency
+  eviction_batch_size: 128
+
+# Sliding window settings
+sliding_window:
+  enabled: false
+  window_size: 2048
+
+# Low-rank compression settings
+low_rank:
+  enabled: false
+  rank: 64
+  adaptive_rank: true
+  energy_threshold: 0.95
+
+# GQA (Grouped Query Attention) settings
+gqa:
+  enabled: false
+  num_kv_heads: 8  # vs 32 query heads
+
+# Memory profiling settings
+profiling:
+  enabled: true
+  log_interval: 100  # Log every N tokens
+  output_format: json  # json or csv
+
+# Model-specific presets
+presets:
+  llama_7b:
+    num_layers: 32
+    num_heads: 32
+    head_dim: 128
+
+  llama_70b:
+    num_layers: 80
+    num_heads: 64
+    head_dim: 128
+    quantization_bits: 4  # Recommend INT4 for large models
+
+  mistral_7b:
+    num_layers: 32
+    num_heads: 32
+    num_kv_heads: 8  # GQA
+    head_dim: 128

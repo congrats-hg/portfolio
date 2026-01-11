@@ -1,0 +1,137 @@
+# Generation Prompts for Synthetic Data Pipeline
+# ==============================================
+# Reference: NVIDIA Nemotron-4 340B prompt templates
+
+# Seed instructions for various domains
+seed_instructions:
+  coding:
+    - "Write a Python function that implements binary search on a sorted list."
+    - "Create a class in Python that represents a linked list with methods for insertion and deletion."
+    - "Write a recursive function to calculate the nth Fibonacci number."
+    - "Implement a function that detects cycles in a linked list."
+    - "Write a Python decorator that caches function results."
+
+  math:
+    - "Solve the quadratic equation 2x² + 5x - 3 = 0 and explain each step."
+    - "Calculate the derivative of f(x) = x³ + 2x² - 5x + 1."
+    - "Find the integral of sin(x) * cos(x) dx."
+    - "Prove that the sum of angles in a triangle equals 180 degrees."
+    - "Explain the concept of limits in calculus with examples."
+
+  writing:
+    - "Write a persuasive essay about the importance of renewable energy."
+    - "Create a short story about a time traveler who accidentally changes history."
+    - "Write a professional email requesting a meeting with a client."
+    - "Compose a poem about the changing seasons."
+    - "Write a product description for a new smartphone."
+
+  reasoning:
+    - "A farmer has chickens and cows. There are 50 heads and 140 legs. How many of each animal?"
+    - "If all roses are flowers and some flowers fade quickly, can we conclude that some roses fade quickly?"
+    - "Explain why the sky appears blue during the day."
+    - "What would happen to Earth's climate if the Moon suddenly disappeared?"
+    - "Analyze the trolley problem from different ethical perspectives."
+
+  science:
+    - "Explain how photosynthesis works at the molecular level."
+    - "Describe the process of DNA replication in eukaryotic cells."
+    - "Explain the theory of general relativity in simple terms."
+    - "How do vaccines work to prevent infectious diseases?"
+    - "Describe the life cycle of a star from formation to death."
+
+# Evolution prompts for making instructions more complex
+evolution_prompts:
+  add_constraints: |
+    Make this instruction more complex by adding constraints or requirements.
+    Original: {instruction}
+    More complex version:
+
+  deepen: |
+    Make this instruction require deeper thinking or more detailed analysis.
+    Original: {instruction}
+    Deeper version:
+
+  multi_step: |
+    Transform this into a multi-step problem that requires sequential reasoning.
+    Original: {instruction}
+    Multi-step version:
+
+  real_world: |
+    Add real-world context or practical applications to this instruction.
+    Original: {instruction}
+    Practical version:
+
+  edge_cases: |
+    Add edge cases or special conditions that need to be handled.
+    Original: {instruction}
+    With edge cases:
+
+# Response generation prompt
+response_prompt: |
+  You are a helpful AI assistant. Please respond to the following instruction thoughtfully and comprehensively.
+
+  Guidelines:
+  - Be accurate and factual
+  - Explain your reasoning when appropriate
+  - Use examples to illustrate concepts
+  - Structure your response clearly
+  - Be concise but complete
+
+  Instruction: {instruction}
+
+  Response:
+
+# Self-instruct prompt for generating new instructions
+self_instruct_prompt: |
+  You are an AI assistant helping to create diverse instructions for training.
+
+  Here are some example instructions:
+  {seed_examples}
+
+  Generate {num_new} new and diverse instructions that are different from the examples above.
+  Each instruction should be:
+  - Clear and specific
+  - Useful and practical
+  - Varied in topic and difficulty
+  - Different from existing examples
+
+  New Instructions (numbered list):
+
+# Quality evaluation prompt (LLM-as-judge)
+evaluation_prompt: |
+  Please evaluate the following response to an instruction on a scale of 1-5 for each criterion.
+
+  Instruction: {instruction}
+
+  Response: {response}
+
+  Evaluation Criteria (1=Poor, 3=Adequate, 5=Excellent):
+
+  1. Helpfulness: Does the response effectively address the instruction?
+     - Does it answer what was asked?
+     - Is it actionable and useful?
+
+  2. Correctness: Is the information accurate and factual?
+     - Are there any errors or misconceptions?
+     - Is the reasoning sound?
+
+  3. Coherence: Is the response well-organized and logical?
+     - Is it easy to follow?
+     - Does it flow naturally?
+
+  4. Complexity: Does the response show appropriate depth?
+     - Is it thorough enough for the task?
+     - Does it handle nuances well?
+
+  5. Verbosity: Is the level of detail appropriate?
+     - Not too brief or too lengthy
+     - Focused and relevant
+
+  Provide your scores in this format:
+  Helpfulness: [1-5]
+  Correctness: [1-5]
+  Coherence: [1-5]
+  Complexity: [1-5]
+  Verbosity: [1-5]
+
+  Brief justification:

@@ -1,0 +1,139 @@
+# Evaluation Criteria for Synthetic Data Quality
+# ===============================================
+# Reference: NVIDIA Nemotron-4 340B Reward Model
+
+# The five evaluation dimensions from Nemotron
+evaluation_dimensions:
+  helpfulness:
+    description: "Does the response effectively address the user's instruction?"
+    weight: 0.30
+    criteria:
+      - "Directly answers the question asked"
+      - "Provides actionable information"
+      - "Addresses all parts of multi-part questions"
+      - "Offers relevant context when helpful"
+    scoring:
+      5: "Excellent - Fully addresses instruction with valuable additional insights"
+      4: "Good - Addresses instruction well with minor gaps"
+      3: "Adequate - Addresses main points but misses some aspects"
+      2: "Poor - Partially addresses instruction with significant gaps"
+      1: "Very Poor - Fails to address instruction or is unhelpful"
+
+  correctness:
+    description: "Is the information accurate and factual?"
+    weight: 0.30
+    criteria:
+      - "Factually accurate information"
+      - "Sound logical reasoning"
+      - "No hallucinations or fabrications"
+      - "Properly qualified uncertain statements"
+    scoring:
+      5: "Excellent - All information is accurate and well-sourced"
+      4: "Good - Accurate with minor, inconsequential errors"
+      3: "Adequate - Mostly accurate with some errors"
+      2: "Poor - Contains significant inaccuracies"
+      1: "Very Poor - Fundamentally incorrect or misleading"
+
+  coherence:
+    description: "Is the response well-organized and logical?"
+    weight: 0.20
+    criteria:
+      - "Logical flow of ideas"
+      - "Clear paragraph structure"
+      - "Smooth transitions"
+      - "Consistent terminology"
+    scoring:
+      5: "Excellent - Perfectly organized and easy to follow"
+      4: "Good - Well-organized with minor flow issues"
+      3: "Adequate - Generally organized but some confusion"
+      2: "Poor - Disorganized and hard to follow"
+      1: "Very Poor - Incoherent or completely disorganized"
+
+  complexity:
+    description: "Does the response show appropriate depth of thought?"
+    weight: 0.10
+    criteria:
+      - "Appropriate level of detail for the task"
+      - "Handles nuances and edge cases"
+      - "Shows understanding of underlying concepts"
+      - "Provides examples when helpful"
+    scoring:
+      5: "Excellent - Deep understanding with comprehensive coverage"
+      4: "Good - Good depth with minor gaps"
+      3: "Adequate - Sufficient depth for basic understanding"
+      2: "Poor - Superficial treatment of topic"
+      1: "Very Poor - No depth or understanding shown"
+
+  verbosity:
+    description: "Is the level of detail appropriate?"
+    weight: 0.10
+    criteria:
+      - "Not too brief or too lengthy"
+      - "Every sentence adds value"
+      - "Appropriate use of examples"
+      - "Focused and relevant"
+    scoring:
+      5: "Excellent - Perfect length with no wasted words"
+      4: "Good - Appropriate length with minor excess"
+      3: "Adequate - Some unnecessary content or gaps"
+      2: "Poor - Too brief or too verbose"
+      1: "Very Poor - Extremely mismatched to task requirements"
+
+# Filtering thresholds
+thresholds:
+  # Minimum overall score to pass (0-1 scale)
+  min_overall_score: 0.5
+
+  # Minimum individual dimension scores
+  min_helpfulness: 0.4
+  min_correctness: 0.5
+  min_coherence: 0.3
+
+  # Heuristic thresholds
+  min_response_length: 50
+  max_response_length: 2000
+  max_repetition_ratio: 0.5
+  min_instruction_overlap: 0.1
+
+# Automatic rejection criteria
+auto_reject:
+  patterns:
+    - "as an ai"
+    - "i cannot"
+    - "i'm sorry"
+    - "i apologize"
+    - "i don't have access"
+    - "i am not able"
+
+  conditions:
+    - "Response is empty"
+    - "Response is just the instruction repeated"
+    - "Response contains only special characters"
+    - "Response is in wrong language"
+
+# Quality improvement prompts
+improvement_prompts:
+  low_helpfulness: |
+    The response doesn't fully address the instruction.
+    Please revise to directly answer: {instruction}
+    Focus on providing actionable, relevant information.
+
+  low_correctness: |
+    The response may contain inaccuracies.
+    Please verify facts and revise for accuracy.
+    Original response: {response}
+
+  low_coherence: |
+    The response could be better organized.
+    Please restructure for clarity and logical flow.
+    Ensure smooth transitions between ideas.
+
+  low_complexity: |
+    The response lacks depth.
+    Please expand on key concepts and provide examples.
+    Address potential edge cases and nuances.
+
+  low_verbosity: |
+    The response length is inappropriate.
+    Please adjust to be more concise/detailed as needed.
+    Every sentence should add value.
