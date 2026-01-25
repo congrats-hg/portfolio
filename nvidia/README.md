@@ -163,6 +163,214 @@ pip install -r synthetic_data_pipeline/requirements.txt
 
 ---
 
+## Quick Start 가이드
+
+### 1. Speculative Decoding 사용법
+
+**Draft-Target 방식으로 추론 가속화:**
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from speculative_decoding.src.draft_target import (
+    DraftTargetDecoder,
+    SpeculativeDecodingConfig
+)
+
+# 모델 로드 (작은 draft 모델 + 큰 target 모델)
+draft_model = AutoModelForCausalLM.from_pretrained("gpt2")
+target_model = AutoModelForCausalLM.from_pretrained("gpt2-medium")
+tokenizer = AutoTokenizer.from_pretrained("gpt2")
+
+# 설정: 한 번에 5개 토큰 추측, 최대 100개 생성
+config = SpeculativeDecodingConfig(
+    num_speculative_tokens=5,
+    max_new_tokens=100
+)
+
+# 디코더 생성 및 실행
+decoder = DraftTargetDecoder(draft_model, target_model, tokenizer, config)
+output, metrics = decoder.generate("Once upon a time")
+
+print(f"생성 결과: {output}")
+print(f"속도 향상: {metrics.speedup_factor:.2f}x")
+print(f"수락률: {metrics.acceptance_rate:.1%}")
+```
+
+**Medusa 멀티헤드 방식:**
+
+```python
+from speculative_decoding.src.medusa_heads import MedusaDecoder, MedusaConfig
+
+# Medusa 설정 (4개 예측 헤드)
+config = MedusaConfig(num_heads=4, num_candidates=64)
+decoder = MedusaDecoder(base_model, tokenizer, config)
+
+output, metrics = decoder.generate("Explain quantum computing")
+print(f"Medusa 속도 향상: {metrics.speedup_factor:.2f}x")
+```
+
+**벤치마크 실행:**
+
+```python
+from speculative_decoding.src.benchmark import SpeculativeDecodingBenchmark
+
+benchmark = SpeculativeDecodingBenchmark(
+    draft_model, target_model, tokenizer
+)
+results = benchmark.run_comparison(
+    prompts=["Once upon a time", "The future of AI"],
+    methods=["autoregressive", "speculative", "medusa"]
+)
+benchmark.print_results(results)
+```
+
+---
+
+### 2. KV Cache Optimization 사용법
+
+**INT8/INT4 양자화로 메모리 절감:**
+
+```python
+from kv_cache_optimization.src.kv_cache_quantization import (
+    QuantizedKVCache,
+    QuantizationConfig
+)
+
+# INT8 양자화 KV Cache (50% 메모리 절감)
+config = QuantizationConfig(bits=8, per_channel=True)
+cache = QuantizedKVCache(
+    num_layers=32,
+    num_heads=32,
+    head_dim=128,
+    max_length=8192,
+    config=config
+)
+
+# 메모리 사용량 확인
+memory_info = cache.get_memory_usage()
+print(f"압축률: {memory_info['compression_ratio']:.2f}x")
+print(f"메모리 절감: {memory_info['memory_saved_mb']:.1f} MB")
+
+# INT4 양자화 (75% 메모리 절감)
+config_int4 = QuantizationConfig(bits=4, per_channel=True)
+cache_int4 = QuantizedKVCache(
+    num_layers=32, num_heads=32, head_dim=128,
+    max_length=8192, config=config_int4
+)
+```
+
+**Token Eviction으로 캐시 관리:**
+
+```python
+from kv_cache_optimization.src.kv_cache_eviction import (
+    KVCacheEvictionManager,
+    EvictionPolicy
+)
+
+# Heavy Hitter (H2O) 정책: 중요한 토큰 유지
+eviction_manager = KVCacheEvictionManager(
+    max_cache_size=2048,
+    policy=EvictionPolicy.HEAVY_HITTER
+)
+
+# Attention 점수 업데이트 및 eviction
+eviction_manager.update_attention_scores(attention_weights)
+tokens_to_evict = eviction_manager.get_eviction_candidates(num_to_evict=100)
+```
+
+**메모리 프로파일링:**
+
+```python
+from kv_cache_optimization.src.memory_profiler import KVCacheProfiler
+
+profiler = KVCacheProfiler(model)
+report = profiler.profile_inference(
+    input_ids,
+    max_length=4096,
+    techniques=["baseline", "int8", "int4", "eviction"]
+)
+profiler.plot_memory_comparison(report)
+profiler.save_report(report, "memory_analysis.json")
+```
+
+---
+
+### 3. Synthetic Data Pipeline 사용법
+
+**전체 파이프라인 실행:**
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from synthetic_data_pipeline.src.pipeline import (
+    SyntheticDataPipeline,
+    PipelineConfig
+)
+
+# 모델 로드
+model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-hf")
+tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf")
+
+# 파이프라인 설정
+config = PipelineConfig(
+    num_samples=1000,           # 생성할 샘플 수
+    min_quality_score=0.5,      # 최소 품질 점수
+    enable_evolution=True,      # Evol-Instruct 사용
+    diversity_clusters=50       # 다양성 클러스터 수
+)
+
+# 파이프라인 실행
+pipeline = SyntheticDataPipeline(model, tokenizer, config)
+results = pipeline.run(
+    seed_file="synthetic_data_pipeline/prompts/generation_prompts.yaml"
+)
+
+# 결과 저장
+pipeline.save(results, "synthetic_data_pipeline/output/generated_data.jsonl")
+print(f"생성된 샘플: {len(results.samples)}")
+print(f"평균 품질 점수: {results.stats.avg_quality_score:.2f}")
+```
+
+**개별 컴포넌트 사용:**
+
+```python
+# 1. Instruction 생성
+from synthetic_data_pipeline.src.data_generator import InstructionGenerator
+
+generator = InstructionGenerator(model, tokenizer)
+instructions = generator.generate_from_seeds(
+    seeds=["Write a Python function", "Explain machine learning"],
+    num_per_seed=10
+)
+
+# 2. 품질 평가
+from synthetic_data_pipeline.src.reward_model import QualityEvaluator
+
+evaluator = QualityEvaluator(model, tokenizer)
+scores = evaluator.evaluate(instruction, response)
+print(f"Helpfulness: {scores.helpfulness:.2f}")
+print(f"Correctness: {scores.correctness:.2f}")
+print(f"총점: {scores.weighted_average:.2f}")
+
+# 3. 필터링
+from synthetic_data_pipeline.src.data_filter import CombinedFilter, FilterConfig
+
+filter_config = FilterConfig(
+    min_instruction_length=10,
+    min_response_length=50,
+    min_quality_score=0.6
+)
+data_filter = CombinedFilter(filter_config)
+filtered_samples = data_filter.filter(samples)
+
+# 4. 다양성 샘플링
+from synthetic_data_pipeline.src.diversity_sampler import DiversitySampler
+
+sampler = DiversitySampler(num_clusters=50)
+diverse_samples = sampler.sample(filtered_samples, num_samples=500)
+```
+
+---
+
 ## 참고 자료
 
 ### NVIDIA 공식 자료
