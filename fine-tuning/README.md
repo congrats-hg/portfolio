@@ -48,9 +48,36 @@ Fine-tuning Qwen2.5-VL-3B-Instruct for chart question answering task.
 
 | Model | Accuracy |
 |-------|----------|
-| Base | TBD |
-| Full FT | TBD |
+| Base | 71.70% |
+| Full FT | 74.60% (+2.90%p) |
 | LoRA | TBD |
+
+### Full Fine-tuning Analysis
+
+#### Training Metrics
+
+**Loss & Accuracy**
+- Initial loss: 0.25 → Final loss: 0.23
+- Token accuracy stabilized at ~92%
+
+**Gradient Norm**
+- Spike observed at step ~700 (peaked at 150), likely due to noisy data batch
+- Recovered and stabilized at ~25 after step 800
+
+**Learning Rate**
+- Cosine decay schedule with warmup
+- Peak at ~2e-5, gradually decayed to near zero
+
+#### Validation Metrics (during training)
+
+- Eval loss: 0.32 → 0.275 (continuously improved)
+- Eval token accuracy: 0.901 → 0.912
+- No overfitting observed (both train and eval metrics improved together)
+
+#### Notes
+
+- Total steps: 1,769 (1 epoch)
+- The gradient spike at step 700 suggests some data samples may need cleaning for future training runs
 
 ---
 

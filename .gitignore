@@ -2,3 +2,8 @@ credentials.json
 *.json
 .env
 *.key
+
+# Model checkpoints
+qwen25vl-chartqa-full-ft/
+qwen25vl-chartqa-lora/
+wandb/
