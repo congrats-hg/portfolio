@@ -54,6 +54,9 @@ Fine-tuning Qwen2.5-VL-3B-Instruct for chart question answering task.
 
 ### Full Fine-tuning Analysis
 
+#### huggingface
+https://huggingface.co/congrats-hg/qwen25vl-chartqa-full-ft
+
 #### wandb
 ![alt text](image.png)
 
