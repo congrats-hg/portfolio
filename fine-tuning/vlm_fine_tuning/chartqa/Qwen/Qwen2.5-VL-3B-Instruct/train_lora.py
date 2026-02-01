@@ -4,6 +4,9 @@ dataset: HuggingFaceM4/ChartQA
 model: Qwen/Qwen2.5-VL-3B-Instruct
 """
 
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "1,2"
+
 from datasets import load_dataset
 import torch
 from transformers import AutoModelForImageTextToText, AutoProcessor
@@ -206,7 +209,7 @@ if __name__ == "__main__":
     # LoRA Fine-tuning 설정
     lora_args = SFTConfig(
         output_dir="qwen25vl-chartqa-lora",
-        num_train_epochs=2,
+        num_train_epochs=10,
         per_device_train_batch_size=8,
         per_device_eval_batch_size=4,
         gradient_accumulation_steps=4,
