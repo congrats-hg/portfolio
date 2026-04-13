@@ -2,8 +2,10 @@ credentials.json
 *.json
 .env
 *.key
+*.log
 
-# Model checkpoints
-qwen25vl-chartqa-full-ft/
-qwen25vl-chartqa-lora/
-wandb/
+# 미완성
+agents/
+
+# 회사 코드 되버림 - 저장 및 관리할 위치 정해지면 삭제
+log_2_excel_project/

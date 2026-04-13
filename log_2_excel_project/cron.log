@@ -502,3 +502,1279 @@ Traceback (most recent call last):
   File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 1, in <module>
     import gspread
 ModuleNotFoundError: No module named 'gspread'
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 12, in <module>
+    from sheets_handler import SheetsHandler
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 1, in <module>
+    import gspread
+ModuleNotFoundError: No module named 'gspread'
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 12, in <module>
+    from sheets_handler import SheetsHandler
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 1, in <module>
+    import gspread
+ModuleNotFoundError: No module named 'gspread'
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 12, in <module>
+    from sheets_handler import SheetsHandler
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 1, in <module>
+    import gspread
+ModuleNotFoundError: No module named 'gspread'
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 12, in <module>
+    from sheets_handler import SheetsHandler
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 1, in <module>
+    import gspread
+ModuleNotFoundError: No module named 'gspread'
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 12, in <module>
+    from sheets_handler import SheetsHandler
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 1, in <module>
+    import gspread
+ModuleNotFoundError: No module named 'gspread'
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 12, in <module>
+    from sheets_handler import SheetsHandler
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 1, in <module>
+    import gspread
+ModuleNotFoundError: No module named 'gspread'
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:23:02.081454] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 200
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:23:12.081657] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 200
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:23:22.081046] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 200
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:23:32.081337] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 200
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:23:42.082375] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 200
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:23:52.081446] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 200
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:24:02.088379] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 200
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:24:12.088227] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 200
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:24:22.094536] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 200
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:24:32.120279] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 200
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:24:42.092935] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 200
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:24:52.094587] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 201
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:25:02.117928] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 201
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:25:12.119679] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 201
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:25:22.119537] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 201
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:25:32.133099] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 201
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:25:42.107685] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 201
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:25:52.130507] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 201
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:26:02.114139] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_0.log', '/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 201
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:26:12.115118] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:26:22.141617] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:26:32.149746] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:26:42.118750] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:26:52.115086] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:27:02.135814] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:27:12.135511] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:27:22.125458] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:27:32.141665] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:27:42.125646] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 403, 'message': 'The caller does not have permission', 'status': 'PERMISSION_DENIED'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 148, in open_by_key
+    raise PermissionError from ex
+PermissionError
+[2026-04-08 13:27:52.148437] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+오류 발생: 
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 201, in _apply_formatting
+    format_cell_range(worksheet, datetime_range, datetime_fmt, self.spreadsheet)
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 27, in f
+    return worksheet.spreadsheet.batch_update({'requests': func(worksheet, *args, **kwargs)})
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Worksheet' object has no attribute 'spreadsheet'. Did you mean: 'spreadsheet_id'?
+[2026-04-08 13:28:02.141801] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+셀 포맷 적용 중 오류 발생: 'Worksheet' object has no attribute 'spreadsheet'
+종합 시트 스타일 적용 오류: 'Worksheet' object has no attribute 'spreadsheet'
+종합 시트 차트 생성 완료
+[2026-04-08 13:28:13.832779] Google Sheets 업데이트 완료
+[2026-04-08 13:28:12.137307] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 45
+종합 시트 스타일 적용 오류: 'Worksheet' object has no attribute 'spreadsheet'
+종합 시트 차트 생성 완료
+[2026-04-08 13:28:23.654666] Google Sheets 업데이트 완료
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 201, in _apply_formatting
+    format_cell_range(worksheet, datetime_range, datetime_fmt, self.spreadsheet)
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 27, in f
+    return worksheet.spreadsheet.batch_update({'requests': func(worksheet, *args, **kwargs)})
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Worksheet' object has no attribute 'spreadsheet'. Did you mean: 'spreadsheet_id'?
+[2026-04-08 13:28:22.137776] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+셀 포맷 적용 중 오류 발생: 'Worksheet' object has no attribute 'spreadsheet'
+시트 2025-10 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_location': 'global', 'quota_unit': '1/min/{project}/{user}', 'quota_limit_value': '60', 'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'service': 'sheets.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2025-11 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_location': 'global', 'quota_unit': '1/min/{project}/{user}', 'quota_limit_value': '60', 'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'service': 'sheets.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2025-12 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'service': 'sheets.googleapis.com', 'quota_limit_value': '60', 'quota_location': 'global', 'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_limit': 'ReadRequestsPerMinutePerUser'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2026-01 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'service': 'sheets.googleapis.com', 'quota_limit_value': '60', 'quota_location': 'global', 'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_limit': 'ReadRequestsPerMinutePerUser'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2026-02 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'service': 'sheets.googleapis.com', 'quota_limit_value': '60', 'quota_location': 'global', 'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_limit': 'ReadRequestsPerMinutePerUser'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2026-03 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'service': 'sheets.googleapis.com', 'quota_limit_value': '60', 'quota_location': 'global', 'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_limit': 'ReadRequestsPerMinutePerUser'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2026-04 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'service': 'sheets.googleapis.com', 'quota_limit_value': '60', 'quota_location': 'global', 'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_limit': 'ReadRequestsPerMinutePerUser'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+월별 데이터가 없습니다.
+[2026-04-08 13:28:32.158501] Google Sheets 업데이트 완료
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 149, in open_by_key
+    raise ex
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_location': 'global', 'quota_limit_value': '60', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_unit': '1/min/{project}/{user}', 'service': 'sheets.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-08 13:28:32.136323] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+오류 발생: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_location': 'global', 'quota_limit_value': '60', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_unit': '1/min/{project}/{user}', 'service': 'sheets.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 149, in open_by_key
+    raise ex
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_limit': 'ReadRequestsPerMinutePerUser', 'consumer': 'projects/339651502554', 'quota_unit': '1/min/{project}/{user}', 'quota_location': 'global', 'service': 'sheets.googleapis.com', 'quota_limit_value': '60', 'quota_metric': 'sheets.googleapis.com/read_requests'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-08 13:28:42.161949] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+오류 발생: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_limit': 'ReadRequestsPerMinutePerUser', 'consumer': 'projects/339651502554', 'quota_unit': '1/min/{project}/{user}', 'quota_location': 'global', 'service': 'sheets.googleapis.com', 'quota_limit_value': '60', 'quota_metric': 'sheets.googleapis.com/read_requests'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 149, in open_by_key
+    raise ex
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'consumer': 'projects/339651502554', 'quota_limit_value': '60', 'service': 'sheets.googleapis.com', 'quota_location': 'global', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_unit': '1/min/{project}/{user}', 'quota_metric': 'sheets.googleapis.com/read_requests'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-08 13:28:52.162385] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+오류 발생: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'consumer': 'projects/339651502554', 'quota_limit_value': '60', 'service': 'sheets.googleapis.com', 'quota_location': 'global', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_unit': '1/min/{project}/{user}', 'quota_metric': 'sheets.googleapis.com/read_requests'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-08 13:29:02.145043] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+종합 시트 스타일 적용 오류: 'Worksheet' object has no attribute 'spreadsheet'
+종합 시트 차트 생성 완료
+[2026-04-08 13:29:12.884397] Google Sheets 업데이트 완료
+[2026-04-08 13:29:12.144460] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+종합 시트 스타일 적용 오류: 'Worksheet' object has no attribute 'spreadsheet'
+종합 시트 차트 생성 완료
+[2026-04-08 13:29:30.527943] Google Sheets 업데이트 완료
+[2026-04-08 13:29:22.152638] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+시트 2026-03 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'service': 'sheets.googleapis.com', 'quota_location': 'global', 'quota_limit_value': '60', 'quota_limit': 'ReadRequestsPerMinutePerUser'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2026-04 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'service': 'sheets.googleapis.com', 'quota_location': 'global', 'quota_limit_value': '60', 'quota_limit': 'ReadRequestsPerMinutePerUser'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+종합 시트 스타일 적용 오류: 'Worksheet' object has no attribute 'spreadsheet'
+기존 차트 삭제 중 오류 (무시): {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_location': 'global', 'consumer': 'projects/339651502554', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_unit': '1/min/{project}/{user}', 'quota_limit_value': '60', 'service': 'sheets.googleapis.com', 'quota_metric': 'sheets.googleapis.com/read_requests'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+종합 시트 차트 생성 완료
+[2026-04-08 13:29:32.154942] Google Sheets 업데이트 완료
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 149, in open_by_key
+    raise ex
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'consumer': 'projects/339651502554', 'service': 'sheets.googleapis.com', 'quota_location': 'global', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-08 13:29:32.151709] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+오류 발생: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'consumer': 'projects/339651502554', 'service': 'sheets.googleapis.com', 'quota_location': 'global', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 149, in open_by_key
+    raise ex
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'quota_location': 'global', 'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_limit_value': '60', 'service': 'sheets.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-08 13:29:42.145196] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+오류 발생: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'quota_location': 'global', 'consumer': 'projects/339651502554', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_limit_value': '60', 'service': 'sheets.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 149, in open_by_key
+    raise ex
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'service': 'sheets.googleapis.com', 'quota_unit': '1/min/{project}/{user}', 'consumer': 'projects/339651502554', 'quota_location': 'global', 'quota_limit_value': '60', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_metric': 'sheets.googleapis.com/read_requests'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-08 13:29:52.178201] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+오류 발생: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'service': 'sheets.googleapis.com', 'quota_unit': '1/min/{project}/{user}', 'consumer': 'projects/339651502554', 'quota_location': 'global', 'quota_limit_value': '60', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_metric': 'sheets.googleapis.com/read_requests'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 149, in open_by_key
+    raise ex
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_metric': 'sheets.googleapis.com/read_requests', 'service': 'sheets.googleapis.com', 'consumer': 'projects/339651502554', 'quota_unit': '1/min/{project}/{user}', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_location': 'global', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-08 13:30:01.181512] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+오류 발생: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_metric': 'sheets.googleapis.com/read_requests', 'service': 'sheets.googleapis.com', 'consumer': 'projects/339651502554', 'quota_unit': '1/min/{project}/{user}', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_location': 'global', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-08 13:30:11.185590] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+종합 시트 스타일 적용 오류: 'Worksheet' object has no attribute 'spreadsheet'
+종합 시트 차트 생성 완료
+[2026-04-08 13:30:28.756401] Google Sheets 업데이트 완료
+[2026-04-08 13:30:21.181480] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+종합 시트 스타일 적용 오류: 'Worksheet' object has no attribute 'spreadsheet'
+종합 시트 차트 생성 완료
+[2026-04-08 13:30:32.418481] Google Sheets 업데이트 완료
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 149, in open_by_key
+    raise ex
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_unit': '1/min/{project}/{user}', 'service': 'sheets.googleapis.com', 'consumer': 'projects/339651502554', 'quota_location': 'global', 'quota_limit_value': '60', 'quota_limit': 'ReadRequestsPerMinutePerUser'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-08 13:30:41.200269] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+오류 발생: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_unit': '1/min/{project}/{user}', 'service': 'sheets.googleapis.com', 'consumer': 'projects/339651502554', 'quota_location': 'global', 'quota_limit_value': '60', 'quota_limit': 'ReadRequestsPerMinutePerUser'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-08 13:30:31.187571] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+시트 2025-10 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_location': 'global', 'quota_metric': 'sheets.googleapis.com/read_requests', 'consumer': 'projects/339651502554', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_limit_value': '60', 'service': 'sheets.googleapis.com', 'quota_unit': '1/min/{project}/{user}'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2025-11 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'service': 'sheets.googleapis.com', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_unit': '1/min/{project}/{user}', 'consumer': 'projects/339651502554', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_location': 'global', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2025-12 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'service': 'sheets.googleapis.com', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_unit': '1/min/{project}/{user}', 'consumer': 'projects/339651502554', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_location': 'global', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2026-01 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'service': 'sheets.googleapis.com', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_unit': '1/min/{project}/{user}', 'consumer': 'projects/339651502554', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_location': 'global', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2026-02 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'service': 'sheets.googleapis.com', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_unit': '1/min/{project}/{user}', 'consumer': 'projects/339651502554', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_location': 'global', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2026-03 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'service': 'sheets.googleapis.com', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_unit': '1/min/{project}/{user}', 'consumer': 'projects/339651502554', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_location': 'global', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+시트 2026-04 데이터 수집 오류: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'service': 'sheets.googleapis.com', 'quota_metric': 'sheets.googleapis.com/read_requests', 'quota_unit': '1/min/{project}/{user}', 'consumer': 'projects/339651502554', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_location': 'global', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+월별 데이터가 없습니다.
+[2026-04-08 13:30:43.009850] Google Sheets 업데이트 완료
+Traceback (most recent call last):
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/main.py", line 68, in main
+    handler = SheetsHandler()
+              ^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/portfolio/log_2_excel_project/sheets_handler.py", line 26, in __init__
+    self.spreadsheet = self.client.open_by_key(SPREADSHEET_ID)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 149, in open_by_key
+    raise ex
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/client.py", line 143, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/spreadsheet.py", line 25, in __init__
+    metadata = self.fetch_sheet_metadata()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread_formatting/functions.py", line 148, in fetch_sheet_metadata
+    r = self.client.request('get', url, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ryu5090/dev/miniconda3/envs/log_2_excel/lib/python3.12/site-packages/gspread/http_client.py", line 112, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'quota_metric': 'sheets.googleapis.com/read_requests', 'consumer': 'projects/339651502554', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_location': 'global', 'service': 'sheets.googleapis.com', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-08 13:30:51.207817] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+오류 발생: {'code': 429, 'message': "Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:339651502554'.", 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_unit': '1/min/{project}/{user}', 'quota_metric': 'sheets.googleapis.com/read_requests', 'consumer': 'projects/339651502554', 'quota_limit': 'ReadRequestsPerMinutePerUser', 'quota_location': 'global', 'service': 'sheets.googleapis.com', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]}
+[2026-04-09 00:00:01.959516] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+종합 시트 스타일 적용 오류: 'Worksheet' object has no attribute 'spreadsheet'
+종합 시트 차트 생성 완료
+[2026-04-09 00:00:14.297995] Google Sheets 업데이트 완료
+[2026-04-10 00:00:01.975403] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+종합 시트 스타일 적용 오류: 'Worksheet' object has no attribute 'spreadsheet'
+종합 시트 차트 생성 완료
+[2026-04-10 00:00:14.616454] Google Sheets 업데이트 완료
+[2026-04-11 00:00:01.560855] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+종합 시트 스타일 적용 오류: 'Worksheet' object has no attribute 'spreadsheet'
+종합 시트 차트 생성 완료
+[2026-04-11 00:00:13.574467] Google Sheets 업데이트 완료
+[2026-04-12 00:00:02.022345] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+종합 시트 스타일 적용 오류: 'Worksheet' object has no attribute 'spreadsheet'
+종합 시트 차트 생성 완료
+[2026-04-12 00:00:14.095960] Google Sheets 업데이트 완료
+[2026-04-13 00:00:01.932575] 로그 처리 시작
+처리할 파일: ['/home/ryu5090/dev/portfolio/log_2_excel_project/sample_1.log']
+파싱된 검색어 수: 57
+종합 시트 스타일 적용 오류: 'Worksheet' object has no attribute 'spreadsheet'
+종합 시트 차트 생성 완료
+[2026-04-13 00:00:13.635582] Google Sheets 업데이트 완료

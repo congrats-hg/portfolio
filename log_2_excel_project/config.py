@@ -1,7 +1,7 @@
 from pathlib import Path
 
 # Google Sheets 설정
-SPREADSHEET_ID = "1M2nBBBSTIylCbECM3YRSWRZ5z9Y45pTKXAjE-ScHnHE"
+SPREADSHEET_ID = "1g1AudpQzulXqS7Y5gpidq2f13E1J4C4D6w-GogR2z6k"
 CREDENTIALS_PATH = Path(__file__).parent / "credentials.json"
 
 # 로그 파일 경로
