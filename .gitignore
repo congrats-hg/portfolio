@@ -7,5 +7,5 @@ credentials.json
 # 미완성
 agents/
 
-# 회사 코드 되버림 - 저장 및 관리할 위치 정해지면 삭제
-log_2_excel_project/
+# 회사 코드가 된 관계로 저장 및 관리할 위치 정해지면 삭제
+log_2_excel_project/*

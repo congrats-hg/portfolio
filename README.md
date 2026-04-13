@@ -1,7 +1,6 @@
 # portfolio
 
 ## fine-tuning
-- VLM fine-tuning on ChartQA dataset using Qwen2.5-VL-3B with Full FT and LoRA methods
 - LLM fine-tuning for Korean text summarization using LoRA on Kanana-1.5-2.1B
 
 ## log_2_excel_project (2026.1)
